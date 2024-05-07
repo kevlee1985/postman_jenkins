@@ -15,7 +15,9 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							""
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -38,7 +40,6 @@
 					{
 						"key": "x-api-key",
 						"value": "5d66fb94516a2060c273092eac49d9ba",
-						"type": "text",
 						"uuid": "33842363-8bbf-47c0-a21e-853fccb0fb22"
 					}
 				],
