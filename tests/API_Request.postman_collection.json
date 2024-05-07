@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "d926e03c-9033-43f1-8edb-34f42114f51e",
+		"name": "The Odds API Request",
+		"description": "Request for odds data using The Odds API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13289515",
+		"_collection_link": "https://restless-crescent-462046.postman.co/workspace/My-Workspace~f54b304a-e3a6-4dae-8dda-a63c11ee229f/collection/13289515-d926e03c-9033-43f1-8edb-34f42114f51e?action=share&source=collection_link&creator=13289515"
+	},
+	"item": [
+		{
+			"name": "Get Odds Data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "5d66fb94516a2060c273092eac49d9ba",
+						"type": "text",
+						"uuid": "33842363-8bbf-47c0-a21e-853fccb0fb22"
+					}
+				],
+				"url": {
+					"raw": "https://api.the-odds-api.com/v4/sports/{sport}/odds/?apiKey=5d66fb94516a2060c273092eac49d9ba&regions=us&markets=h2h&sport=soccer_usa_mls&oddsFormat=decimal",
+					"protocol": "https",
+					"host": [
+						"api",
+						"the-odds-api",
+						"com"
+					],
+					"path": [
+						"",
+						"v4",
+						"sports",
+						"{sport}",
+						"odds",
+						""
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "5d66fb94516a2060c273092eac49d9ba"
+						},
+						{
+							"key": "regions",
+							"value": "us"
+						},
+						{
+							"key": "markets",
+							"value": "h2h"
+						},
+						{
+							"key": "sport",
+							"value": "soccer_usa_mls"
+						},
+						{
+							"key": "oddsFormat",
+							"value": "decimal"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
